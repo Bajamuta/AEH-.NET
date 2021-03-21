@@ -1,0 +1,6 @@
+C:\Users\jpraj\RiderProjects\Solution1\Konto\obj\Debug\Konto.csprojAssemblyReference.cache
+C:\Users\jpraj\RiderProjects\Solution1\Konto\obj\Debug\Konto.csproj.CoreCompileInputs.cache
+C:\Users\jpraj\RiderProjects\Solution1\Konto\bin\Debug\Konto.exe
+C:\Users\jpraj\RiderProjects\Solution1\Konto\bin\Debug\Konto.pdb
+C:\Users\jpraj\RiderProjects\Solution1\Konto\obj\Debug\Konto.exe
+C:\Users\jpraj\RiderProjects\Solution1\Konto\obj\Debug\Konto.pdb
