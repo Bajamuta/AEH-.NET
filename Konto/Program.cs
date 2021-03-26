@@ -12,6 +12,7 @@ namespace Konto
             k.LogOut();
             k.ChangePassword("awf");
             k.ChangePassword("acc");
+            k.sprawdzSaldo();
             Console.WriteLine("Naciśnij dowolny klawisz");
             Console.ReadKey();
         }

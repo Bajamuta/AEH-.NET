@@ -47,6 +47,32 @@ namespace Konto
             else if (newPassword == password)
                 Console.WriteLine("This password has been already used");
         }
-        
+
+        public void wplac(double kwota)
+        {
+            saldo += kwota;
+        }
+
+        public void wyplac(double kwota)
+        {
+            saldo -= kwota;
+        }
+
+        public double getSaldo()
+        {
+            return saldo;
+        }
+
+        public void sprawdzSaldo()
+        {
+            if (logged)
+            {
+                Console.WriteLine($"Stan konta wynosi: {getSaldo()}");
+            }
+            else
+            {
+                Console.WriteLine("Należy być zalogowanym, aby sprawdzić saldo.");
+            }
+        }
     }
 }
