@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.Solution1.iml
+/modules.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../../../../../:\Users\Mango\Desktop\Inżynier WSTI (AEH)\Informatyka sem VI\Programowanie .net\Laboratoria\Lab 2\AEH-.NET\AEH-.NET\.idea\.idea.Solution1\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
