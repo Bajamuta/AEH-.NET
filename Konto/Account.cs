@@ -19,7 +19,15 @@ namespace Konto
 
         public void Zaloguj(String log, String pass)
         {
-            if ((login == log) && (password == pass)) { logged = true; }
+            if ((login == log) && (password == pass))
+            {
+                logged = true;
+                Console.WriteLine("Zalogowano.");
+            }
+            else
+            {
+                Console.WriteLine("Nieprawidłowe dane.");
+            }
         }
 
         public override String ToString()
@@ -38,22 +46,28 @@ namespace Konto
 
         public void ChangePassword(String newPassword)
         {
-            if ((logged) && (newPassword != password))
+            if (logged && (newPassword != password))
             {
                 password = newPassword;
-                Console.WriteLine($"New Password: {password}");
+                Console.WriteLine($"Nowe hasło: {password}");
                 
             }
-            else if (newPassword == password)
-                Console.WriteLine("This password has been already used");
+            else if (logged && newPassword == password)
+            {
+                Console.WriteLine("To hasło już było użyte.");
+            }
+            else
+            {
+                Console.WriteLine("Należy być zalogowanym, aby zmienić hasło!");
+            }
         }
 
-        public void wplac(double kwota)
+        public void Wplac(double kwota)
         {
             saldo += kwota;
         }
 
-        public void wyplac(double kwota)
+        public void Wyplac(double kwota)
         {
             saldo -= kwota;
         }
@@ -63,7 +77,12 @@ namespace Konto
             return saldo;
         }
 
-        public void sprawdzSaldo()
+        public bool getLogged()
+        {
+            return logged;
+        }
+
+        public void SprawdzSaldo()
         {
             if (logged)
             {

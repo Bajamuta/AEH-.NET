@@ -11,8 +11,15 @@ namespace Konto
             Console.WriteLine(k);
             k.LogOut();
             k.ChangePassword("awf");
+            k.SprawdzSaldo();
+            k.Zaloguj("mała", "czarna");
+            k.SprawdzSaldo();
             k.ChangePassword("acc");
-            k.sprawdzSaldo();
+            k.Wplac(50);
+            k.LogOut();
+            Console.WriteLine(k);
+            k.Wyplac(120);
+            Console.WriteLine(k);
             Console.WriteLine("Naciśnij dowolny klawisz");
             Console.ReadKey();
         }
